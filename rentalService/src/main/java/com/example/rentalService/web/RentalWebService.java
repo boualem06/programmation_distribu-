@@ -22,23 +22,9 @@ public class RentalWebService {
 
     @GetMapping("/bonjour")
     public String disBonjour() {
-        return "this is the modified one from newcarservice  !";
+        return "this is the modified one from newcarservice_f  !";
     }
 
-    // @PutMapping(value = "/cars/{plateNumber}")
-    // public void rent(
-    //         @PathVariable("plateNumber") String plateNumber,
-    //         @RequestParam(value="rent", required = true)boolean rent,
-    //         @RequestBody Dates dates)
-    // {
-
-    //     logger.info("PlateNumber:" + plateNumber);
-    //     logger.info("Rent:" + rent);
-    //     logger.info("Dates:" + dates);
-
-    // }
-
-    
 
 
     @GetMapping(value = "/cars/{plateNumber}")
