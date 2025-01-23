@@ -22,7 +22,7 @@ public class RentalWebService {
 
     @GetMapping("/bonjour")
     public String disBonjour() {
-        return "this is the modified one from newcarservice  !";
+        return "this is the modified one from newcarservice_f  !";
     }
 
     // @PutMapping(value = "/cars/{plateNumber}")
