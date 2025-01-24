@@ -25,13 +25,11 @@ jobs:
           export SHELL=/bin/bash
           ./gradlew build
 
-      # Step 4: Build the Docker image
-      - name: Build Docker image
+      - name: Docker images
+        working-directory: rentalService
         run: |
-          docker build -t rental-service:latest -f rentalService/Dockerfile .
-
-      # Step 5: Run the Docker container
-      - name: Run Docker container
-        run: |
-          docker run -d -p 8080:8080 rental-service:latest
+          export SHELL=/bin/bash
+          docker build -t rentalservice .
+          docker run -p 4000:8080 rentalservice
+          curl http://localhost:4000/cars
 
