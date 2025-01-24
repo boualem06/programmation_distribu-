@@ -30,6 +30,6 @@ jobs:
         run: |
           export SHELL=/bin/bash
           docker build -t rentalservice .
-          docker run -p 4000:8080 rentalservice
+          docker run -d -p 4000:8080 rentalservice
           curl http://localhost:4000/cars
 
