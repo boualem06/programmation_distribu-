@@ -22,7 +22,7 @@ public class RentalWebService {
 
     @GetMapping("/bonjour")
     public String disBonjour() {
-        return "this is the modified one from newcarservice_f  !";
+        return "this is the modified one from newbranch  !";
     }
 
 
