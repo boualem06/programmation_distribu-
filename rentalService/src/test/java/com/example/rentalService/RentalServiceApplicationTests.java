@@ -9,5 +9,9 @@ class RentalServiceApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+	@Test
+	public void test1(){
+		
+	}
 
 }
